@@ -59,7 +59,7 @@ function getGitPostCmds(cfg) {
 }
 
 function getStaticPathCmds(staticpath) {
-  return staticpath ? ["cp -r " + staticpath + "/* ."] : [];
+  return staticpath ? ["cp -rT " + staticpath + "/ ."] : [];
 }
 
 function getCnameCmds(cname) {
